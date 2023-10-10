@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot and Cold</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <h1>Welcome to Hot and Cold!</h1>
+    <p>Hot and cold is a number guessing game where you will get a response 
+        if you're either closer or further away to a number between 1-100 from your previous guess.
+    </p>
+    
+    <p>You recieve 5 guesses after you're initial guess.</p>
+    <div>
+
+    </div>
+    <br>
+    <!-- <table>
+        <tr>
+            <th>Initial guess</th>
+            <th>Guess 1</th>
+            <th>Guess 2</th>
+            <th>Guess 3</th>
+            <th>Guess 4</th>
+            <th>Guess 5</th>
+        </tr>
+        <tr>
+            <td id="init"></td>
+            <td id="1"></td>
+            <td id="2"></td>
+            <td id="3"></td>
+            <td id="4"></td>
+            <td id="5"></td>
+        </tr>
+    </table> -->
+    <br>
+    <p id="hc"> </p>
+    <br>
+    <div id="buttons">
+        <button id="m25" onclick="changeVal(this.id);" >-25</button> 
+        <button id="m10"  onclick="changeVal(this.id);">-10</button> 
+        <button id="m5"  onclick="changeVal(this.id);">-5</button> 
+        <button id="m"  onclick="changeVal(this.id);">-</button> 
+        <b id="Num">50</b> 
+        <button id="p"  onclick="changeVal(this.id);">+</button> 
+        <button id="p5"  onclick="changeVal(this.id);">+5</button> 
+        <button id="p10"  onclick="changeVal(this.id);">+10</button> 
+        <button id="p25"  onclick="changeVal(this.id);">+25</button>
+        <br>
+        <br>
+        <button id="c" onclick="guess();">Commit</button>
+    </div>
+    <p id="ng">
+        number of guesses: 5
+    </p>
+    <script type="text/javascript"  src="scripts.js"></script>
+</body>
+</html>
